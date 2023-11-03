@@ -1,0 +1,17 @@
+    <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
+    
+    
+    
+    
+    
+    
+    <div itemscope itemtype="https://schema.org/VideoObject">
+        <meta itemprop="name" content="ACS-HSC-HM-1-7-1" /><meta itemprop="description" content="Platform: Aparsclassroom<br />Level: HSC<br />Subject: Higher Math<br />Part: 1st Paper<br />Chapter: 7<br />Lecture No. : 1" /><meta itemprop="uploadDate" content="2023-10-30T04:08:33.000Z" /><meta itemprop="thumbnailUrl" content="https://s2.dmcdn.net/v/VMl_x1bFotYe4VV02/x180" /><meta itemprop="duration" content="P5635S" /><meta itemprop="embedUrl" content="https://geo.dailymotion.com/player/xkmqu.html?video=k4JBNa2l2gYhcvzBhzR" /><script src="https://geo.dailymotion.com/player/xkmqu.js" data-video="k4JBNa2l2gYhcvzBhzR"></script>
+    </div>
+    
+    
+    
+    
+    
+    
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
