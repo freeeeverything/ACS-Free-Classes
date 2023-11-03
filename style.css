@@ -50,6 +50,10 @@ body {
 
 }
 
+.active {
+    background-color: var(--white);
+}
+
 .nav-logo {
     font-weight: 900;
     display: inline;
@@ -105,18 +109,19 @@ header .navbar nav ul li:hover ul.dropdown {
 section {
     padding: 3rem 4rem;
     text-align: center;
-    border-bottom: 1px solid var(--black);
+    width: 100%;
+}
+
+section .grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(auto, auto);
 }
 
 .free {
     font-size: 4rem;
     margin-left: 1rem;
 }
-
-
-
-
-
 
 .footer {
     text-align: center;
@@ -153,6 +158,18 @@ section {
 
 
 
+/* Subjects */
+
+.ga {
+    grid-row: ;
+}
+
+
+
+
+/* ---------- */
+
+
 /* Media Queries */
 /* UTILITIES */
 .blue-text {
@@ -177,4 +194,8 @@ section {
 
 .display-block {
     display: block;
+}
+
+.bb {
+    border-bottom: 1px solid var(--black);
 }
