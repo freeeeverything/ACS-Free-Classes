@@ -51,7 +51,7 @@ body {
 }
 
 .active {
-    background-color: var(--white);
+    color: var(--blue);
 }
 
 .nav-logo {
@@ -75,10 +75,6 @@ body {
     transition: all .1s;
 }
 
-.nav-links li:hover {
-    background-color: var(--f-blue);
-}
-
 header .navbar nav ul li ul.dropdown {
     width: auto;
     background-color: var(--f-blue);
@@ -86,7 +82,8 @@ header .navbar nav ul li ul.dropdown {
     z-index: 999;
     display: none;
     margin-top: .6rem;
-    transform: translateX(-10px);
+    transform: translateX(-8px);
+    transform: translateY(3px);
 
 }
 
@@ -112,10 +109,12 @@ section {
     width: 100%;
 }
 
-section .grid {
+section.grid.class-page {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(auto, auto);
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-rows: auto;
+    grid-auto-flow: column;
 }
 
 .free {
@@ -137,7 +136,7 @@ section .grid {
     gap: 1rem;
 }
 
-.container>.card {
+.card {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 3rem;
     margin-top: 1.5rem;
@@ -148,7 +147,7 @@ section .grid {
     transition: all .2s;
 }
 
-.container>.card:hover {
+.card:hover {
     background-color: var(--black);
     color: var(--white);
     transform: translateY(-10px);
@@ -161,11 +160,66 @@ section .grid {
 /* Subjects */
 
 .ga {
-    grid-row: ;
+    padding-bottom: 2rem;
 }
 
+/*hide the inputs/checkmarks and submenu*/
+input,
+div.chapters {
+    display: none;
+}
 
+/*position the label*/
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--f-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 1px solid var(--black);
+    transition: all .2s;
+}
 
+/*show the submenu when input is checked*/
+input:checked~div.chapters {
+    display: block;
+}
+
+#chapnum {
+    font-weight: 400;
+}
+
+#chapname {
+    font-weight: 900;
+}
+
+.chapters button:hover #chapnum,
+.chapters button:hover #chapname {
+    color: var(--white);
+}
+
+.chapters {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
+}
+
+.chapters div {
+    display: inline-block;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3rem;
+    margin-top: 5px;
+    /* margin-bottom: 2rem; */
+    background-color: var(--f-blue);
+    font-weight: 700;
+    border: 1px solid var(--black);
+    transition: all .2s;
+}
 
 /* ---------- */
 
