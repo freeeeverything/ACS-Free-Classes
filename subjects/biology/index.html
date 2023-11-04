@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Higher Math - ACS Free Classes</title>
+    <title>Biology - ACS Free Classes</title>
 
-    <link rel="stylesheet" href="...\style.css">
+    <link rel="stylesheet" href="/ACS-Free-Classes/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/ACS-Free-Classes/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ACS-Free-Classes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ACS-Free-Classes/favicon-16x16.png">
+    <link rel="manifest" href="/ACS-Free-Classes/site.webmanifest">
 </head>
 <body>
     <header>
         <div class="navbar">
             <nav>
                 <ul class="nav-links">
-                    <!-- <li><a class="active" href="/">Home</a></li> -->
+                    <!-- <li><a class="active" href='/ACS-Free-Classes/">Home</a></li> -->
                     <li>
                         <a>Subjects</a>
 
                         <ul class="dropdown">
-                            <li><a class="active" href='./subjects/higher_math.html'>Higher Mathematics</a></li>
-                            <li><a href='./subjects/physics.html'>Physics</a></li>
-                            <li><a href='./subjects/chemistry.html'>Higher Mathematics</a></li>
-                            <li><a href='./subjects/biology.html'>Higher Mathematics</a></li>
+                            <li><a href='ACS-Free-Classes/subjects/higher_math'>Higher Mathematics</a></li>
+                            <li><a href='ACS-Free-Classes/subjects/physics'>Physics</a></li>
+                            <li><a href='/ACS-Free-Classes/subjects/chemistry'>Higher Mathematics</a></li>
+                            <li><a href='/ACS-Free-Classes/subjects/biology'>Higher Mathematics</a></li>
+
                         </ul>
                     </li>
 
@@ -39,25 +46,33 @@
             <h1>Select Your Desired Paper</h1>
             <div>
                 <input id="1paper" type="checkbox" name="1paper" />
-                <label for="1paper">Higher Mathematics<br>1st Paper</label>
+                <label for="1paper">Physics<br>1st Paper</label>
                 <div class="chapters">
-                    <div><a href=""><span id="chapnum">Chapter 1</span><br><span id="chapname">PHYSICAL WORLD AND MEASUREMENT</span></a></div>
-                    <div>Chapter 2<br>VECTOR</div>
-                    <div>Chapter 3<br>DYNAMICS</div>
-                    <div>Chapter 3<br>NEWTONIAN MECHANICS</div>
-                    <div>Chapter 5<br>WORK, ENERGY AND POWER</div>
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/1.html';" target="_blank"><span id="chapnum">Chapter 1</span><br><span id="chapname">PHYSICAL WORLD AND MEASUREMENT</span></button>
+
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/2.html';" target="_blank"><span id="chapnum">Chapter 2</span><br><span id="chapname">VECTOR</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/3.html';" target="_blank"><span id="chapnum">Chapter 3</span><br><span id="chapname">DYNAMICS</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/4.html';" target="_blank"><span id="chapnum">Chapter 4</span><br><span id="chapname">NEWTONIAN MECHANICS</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/5.html';" target="_blank"><span id="chapnum">Chapter 5</span><br><span id="chapname">WORK, ENERGY AND POWER</span></button>
                 </div>
-                <div>
-                    <input id="2paper" type="checkbox" name="2paper" />
-                    <label for="2paper">Higher Mathematics<br>1st Paper</label>
-                    <div class="chapters">
-                        <div>Chapter 1<br>PHYSICAL WORLD AND MEASUREMENT</div>
-                        <div>Chapter 2<br>VECTOR</div>
-                        <div>Chapter 3<br>DYNAMICS</div>
-                        <div>Chapter 3<br>NEWTONIAN MECHANICS</div>
-                        <div>Chapter 5<br>WORK, ENERGY AND POWER</div>
-                    </div>
-    
+            </div>
+            <div>
+                <input id="2paper" type="checkbox" name="2paper" />
+                <label for="2paper">Physics<br>1st Paper</label>
+                <div class="chapters">
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/1.html';" target="_blank"><span id="chapnum">Chapter 1</span><br><span id="chapname">PHYSICAL WORLD AND MEASUREMENT</span></button>
+
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/2.html';" target="_blank"><span id="chapnum">Chapter 2</span><br><span id="chapname">VECTOR</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/3.html';" target="_blank"><span id="chapnum">Chapter 3</span><br><span id="chapname">DYNAMICS</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/4.html';" target="_blank"><span id="chapnum">Chapter 4</span><br><span id="chapname">NEWTONIAN MECHANICS</span></button>
+                    
+                    <button class="card" onclick="window.location.href='/ACS-Free-Classes/subjects/physics/chapters/5.html';" target="_blank"><span id="chapnum">Chapter 5</span><br><span id="chapname">WORK, ENERGY AND POWER</span></button>
+                </div>
             </div>
         </div>
     </section>
