@@ -281,7 +281,86 @@ h3 {
 
 /* ------- */
 
+/* Class Page */
+.class-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+.player {
+    grid-row: 1 / 3;
+    grid-column: 1 / 6;
+    width: clamp(200px, 100%, 700px);
+}
+
+#Video_Description {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+    text-align: left;
+}
+
+#instructor {
+    grid-column: 6 / 8;
+    text-align: left;
+    padding: 0;
+}
+
+#instructor img {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+#instructor h4 {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#instructor #name {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: block;
+}
+
+#instructor #qua {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+#hw {
+    margin-top: 50px;
+
+}
+
+
+
+/* --------------- */
+
 /* Media Queries */
+
+@media (max-width: 768px) {
+    .class-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    #hw {
+        grid-row: 4 / 5;
+    }
+
+    #name, 
+    #qua {
+        font-size: 0.5rem;
+    }
+}
+
 /* UTILITIES */
 .blue-text {
     color: var(--blue);
