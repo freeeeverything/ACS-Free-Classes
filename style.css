@@ -50,7 +50,8 @@ body {
 
 }
 
-.active {
+.active,
+.navbar nav ul li:hover .nav-link {
     color: var(--blue);
 }
 
@@ -207,6 +208,7 @@ input:checked~div.chapters {
     display: grid;
     grid-template-rows: repeat(7, auto);
     grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
+    grid-auto-rows: auto;
 }
 
 .chapters div {
@@ -224,13 +226,68 @@ input:checked~div.chapters {
 /* ---------- */
 
 
+/* Chapter Contents */
+
+.chapter-flex {
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.class-card {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
+    margin-top: 1.2rem;
+    background-color: var(--f-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 1px solid var(--black);
+    transition: all .2s;
+}
+
+.class-card:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.class-card img {
+    width: 100%;
+}
+
+.class-card p {
+    padding: .5rem;
+}
+
+.class-card:hover p {
+    color: var(--white);
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+/* ------- */
+
 /* Media Queries */
 /* UTILITIES */
 .blue-text {
     color: var(--blue);
 }
 
-.white -text {
+.white-text {
     color: var(--white);
 }
 
