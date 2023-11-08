@@ -545,6 +545,9 @@ h3 {
         align-self: center;
     }
 
+    #sub-page-head {
+        font-size: 1.4rem;
+    }
 }
 
 /* UTILITIES */

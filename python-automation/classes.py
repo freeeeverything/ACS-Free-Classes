@@ -238,7 +238,7 @@ while 1:
                     <span id="qua">{instructor_edu}<br>{instructor_ins}</span>
                 </div>  
                 {cmnts}<div id="hw">
-                    <button class="card" onclick="window.location.href='{hw}';" target="_blank">HW</button>
+                    <button class="card" onclick="window.location.href='https://drive.google.com/file/d/{hw}';" target="_blank">HW</button>
                 </div>{cmnte}
             </div>
             
