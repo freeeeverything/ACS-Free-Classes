@@ -1,75 +1,76 @@
 import webbrowser
 import os.path
 
-loop = True
-while loop == True:
-    year = input("Tell me the Batch of the class: ")
-    year = str(year)
+year = input("Tell me the Batch of the class: ")
+year = str(year)
 
-    if year == "n":
-        break
 
-    sub = input("Subject (only p,c,b,m): ")
-    if sub == "m":
-        sub = "Higher Math"
-        sub_path = "higher_math"
-        instructor_link = "https://i.postimg.cc/0NBqsr4C/25487446-2078715289017118-575051190755419269-o.jpg"
-        instructor_name = 'Abhi Datta Tushar'
-        instructor_edu = "Mechanical Engineering"
+sub = input("Subject (only p,c,b,m): ")
+if sub == "m":
+    sub = "Higher Math"
+    sub_path = "higher_math"
+    instructor_link = "https://i.postimg.cc/0NBqsr4C/25487446-2078715289017118-575051190755419269-o.jpg"
+    instructor_name = 'Abhi Datta Tushar'
+    instructor_edu = "Mechanical Engineering"
+    instructor_ins = "BUET"
+
+elif sub == 'p':
+    sub = "Physics"
+    sub_path = "physics"
+    instr = input("Instructor: (a for Apurbo, b for Apar) : ")
+    if instr == 'a':
+        instructor_link = "https://i.postimg.cc/43SLXTfR/Screenshot-2023-04-04-at-5-39-51-PM.png"
+        instructor_name = 'Apurbo Opu'
+        instructor_edu = "BSc. in EEE"
+        instructor_ins = "RUET"
+    if instr == 'b':
+        instructor_link = "https://d1yreyj8btzg0t.cloudfront.net/images/special/ssc/2.%20Numeri%20Sattar%20Apar.png"
+        instructor_name = 'Numeri Sattar Apar'
+        instructor_edu = "Civil Engineering"
         instructor_ins = "BUET"
 
-    elif sub == 'p':
-        sub = "Physics"
-        sub_path = "physics"
-        instr = input("Instructor: (a for Apurbo, b for Apar) : ")
-        if instr == 'a':
-            instructor_link = "https://i.postimg.cc/43SLXTfR/Screenshot-2023-04-04-at-5-39-51-PM.png"
-            instructor_name = 'Apurbo Opu'
-            instructor_edu = "BSc. in EEE"
-            instructor_ins = "RUET"
-        if instr == 'b':
-            instructor_link = "https://d1yreyj8btzg0t.cloudfront.net/images/special/ssc/2.%20Numeri%20Sattar%20Apar.png"
-            instructor_name = 'Numeri Sattar Apar'
-            instructor_edu = "Civil Engineering"
-            instructor_ins = "BUET"
+elif sub == 'c':
+    sub = "Chemistry"
+    sub_path = "chemistry"
+    instr = input("Instructor: (a for Sanjoy, b for Apar) : ")
+    if instr == 'a':
+        instructor_link = "https://i.postimg.cc/dVSqqWkd/Screenshot-2021-11-19-001737.png"
+        instructor_name = 'Sanjoy Chakraborty'
+        instructor_edu = "Mechanical Engineering"
+        instructor_ins = "BUET"
+    if instr == 'b':
+        instructor_link = "https://i.postimg.cc/bvD9XVHS/H-Nazmus-Sakib-Full-Resolution.jpg"
+        instructor_name = 'Md. Nazmus Sakib'
+        instructor_edu = "Chemistry"
+        instructor_ins = "DU"
 
-    elif sub == 'c':
-        sub = "Chemistry"
-        sub_path = "chemistry"
-        instr = input("Instructor: (a for Sanjoy, b for Apar) : ")
-        if instr == 'a':
-            instructor_link = "https://i.postimg.cc/dVSqqWkd/Screenshot-2021-11-19-001737.png"
-            instructor_name = 'Sanjoy Chakraborty'
-            instructor_edu = "Mechanical Engineering"
-            instructor_ins = "BUET"
-        if instr == 'b':
-            instructor_link = "https://i.postimg.cc/bvD9XVHS/H-Nazmus-Sakib-Full-Resolution.jpg"
-            instructor_name = 'Md. Nazmus Sakib'
-            instructor_edu = "Chemistry"
-            instructor_ins = "DU"
+elif sub == 'b':
+    sub = "Biology"
+    sub_path = "biology"
+    instructor_link = "https://i.postimg.cc/DychPq8r/Screenshot-2021-09-20-174533.png"
+    instructor_name = 'Hasnat Shuvro'
+    instructor_edu = "Shaheed Suhrawardy Medical"
+    instructor_ins = "College (Undergraduate)"
 
-    elif sub == 'b':
-        sub = "Biology"
-        sub_path = "biology"
-        instructor_link = "https://i.postimg.cc/DychPq8r/Screenshot-2021-09-20-174533.png"
-        instructor_name = 'Hasnat Shuvro'
-        instructor_edu = "Shaheed Suhrawardy Medical"
-        instructor_ins = "College (Undergraduate)"
+paper_path = ""
+paper = input("Paper (only 1,2): ")
+if paper == "1":
+    paper = "1st"
+    paper_path = "1"
+elif paper == "2":
+    paper = "2nd"
+    paper_path = "2"
 
-    paper_path = ""
-    paper = input("Paper (only 1,2): ")
-    if paper == "1":
-        paper = "1st"
-        paper_path = "1"
-    elif paper == "2":
-        paper = "2nd"
-        paper_path = "2"
+chap = input("Chapter Number: ")
+chap = str(chap)
 
-    chap = input("Chapter Number: ")
-    chap = str(chap)
-
+while 1:
     lec = input("Lecture Number: ")
     lec = str(lec)
+    
+    if lec == "n":
+        break
+
 
     thumbnail = input("Thumbnail Link: ")
 
