@@ -1,7 +1,8 @@
 import webbrowser
 import os.path
 
-while 1:
+loop = True
+while loop == True:
     year = input("Tell me the Batch of the class: ")
     year = str(year)
 
