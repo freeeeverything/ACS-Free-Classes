@@ -265,5 +265,5 @@ while 1:
 
     file.write(html_content)
     file.close()
-
+    
 print("well done MOUIN. ALHAMDULILLAH")

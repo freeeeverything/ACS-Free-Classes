@@ -1,6 +1,13 @@
 import webbrowser
 import os.path
 
+instructor_link = ""
+instructor_ins = ""
+instructor_edu = ""
+instructor_name = ""
+cmnts = ''
+cmnte = ""
+
 while 1:
     year = input("Tell me the Batch of the class: ")
     year = str(year)
